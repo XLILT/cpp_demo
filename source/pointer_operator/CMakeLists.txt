@@ -11,10 +11,10 @@ endif(CMAKE_COMPILER_IS_GNUCXX)
 
 #include_directories(.)
 #link_directories(.)
+
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} CUR_DIR_SRCS)
 
 add_executable(main ${CUR_DIR_SRCS})
 
 target_link_libraries(main
 )
-

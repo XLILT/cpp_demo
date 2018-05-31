@@ -11,3 +11,7 @@ if [ ! -d build ]; then
     mkdir build
 fi
 
+CTIME=$(date +"%Y-%m-%d %H:%M")
+
+sed -i "s/\${CREATE_TIME}/${CTIME}/" main.cpp
+
